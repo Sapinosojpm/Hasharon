@@ -66,8 +66,8 @@
           <div class="offcanvas-body">
             <div class="row" id="productCategory">
               <ul>
-                <li><a href="#mechanicalTresher">Mechanical Tresher</a></li>
-                <li><a href="#mechanicalShredders">Shredder</a></li>
+                <li><a href="#machineTresher">Mechanical Tresher</a></li>
+                <li><a href="#machineShredders">Shredder</a></li>
                 <li><a href="#piggeryPen">Piggery Pen</a></li>
                 <li><a href="">Wood Chipper</a></li>
                 <li><a href="">Scale</a></li>
@@ -86,21 +86,11 @@
                 <li><a href="">Product Sets</a></li>
               </ul>
             </div>
-
-            <div class="dropdown mt-3">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-              >
-                <img src="./images/people.png" alt="" /> Acount
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
+            <div id="signoutProduct">
+              <a href="./index.html" class="text-decoration-none">Sign Out</a>
             </div>
+            
+            
           </div>
         </div>
         <!-- <form class="d-flex" role="search">
@@ -126,51 +116,51 @@
     <hr>
      <!-- product 1 -->
      <div class="container col-md-8 ">
-      <h3 class="text-center m-5">Machine Threshers</h3>
+      <h3 class="text-center m-5" id="machineTresher">Machine Threshers</h3>
       <div class="container" id="categories">    
         <div class=" row" id="divider">
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="category">
               
-              <img src="./category images/mechanical tresher.jpg" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <img src="./products images/mechanical tresher.jpg" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
               <h3>Dual Grain/Corn Tresher</h3>
-              <p>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                <p>Power Source: Electric motor/ diesel
+                Production Capacity: 1-1.5t/hr
+                Gasoline engine
               </p>
               <button class="cart-button">Add to Cart</button> 
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="category">
-              <img src="./category images/Shredder.PNG" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <img src="./products images/corn tresher.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
               <h3>Corn Tresher</h3>
-              <p>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </p>
+              <p>Capacity: 750kgs/hr
+                Size: 68*27*62cm
+                Weight: 9.8kgs
+                Voltage: 220v</p>
               <button class="cart-button">Add to Cart</button> 
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="category">
-              <img src="./category images/Piggery pen.jpg" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <img src="./products images/Grain Tresher.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
               <h3>Grain Tresher</h3>
               <p>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                Capacity: 800kgs/hr
+                Size: 950*77*47mm
+                Voltage: 220v/ 380v
               </p>
               <button class="cart-button">Add to Cart</button> 
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="category">
-              <img src="./category images/Wood Chipper.PNG" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <img src="./products images/Corn sheller and tresher.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
               <h3>Corn Sheller and Tresher</h3>
               <p>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                Electric type
               </p>
               <button class="cart-button">Add to Cart</button> 
             </div>
@@ -182,17 +172,17 @@
 
      </div>
 
-     <!-- product 2 end -->
+     <!-- product 2 start -->
 
     <div class="container col-md-8 ">
-      <h3 class="text-center m-5">Machine Shredders</h3>
+      <h3 class="text-center m-5" id="machineShredders">Machine Shredders</h3>
       <div class="container" id="categories">    
         <div class=" row" id="divider">
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="category">
               
-              <img src="./category images/mechanical tresher.jpg" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <img src="./products images/multi purpose shredder.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
               <h3>Multipurpose Shredder</h3>
               <p>
                 Some quick example text to build on the card title and make up the
@@ -203,7 +193,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="category">
-              <img src="./category images/Shredder.PNG" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <img src="./products images/Shredder.PNG" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
               <h3>Decorticator Shredder</h3>
               <p>
                 Some quick example text to build on the card title and make up the
@@ -214,8 +204,35 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="category">
-              <img src="./category images/Piggery pen.jpg" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <img src="./products images/Decorticator Shredder.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
               <h3>Plastic Shredder</h3>
+              <p>
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="cart-button">Add to Cart</button> 
+            </div>
+          </div>
+          
+          
+
+        </div>
+       </div>
+
+     </div>
+
+     <!-- product 3 start -->
+
+    <div class="container col-md-8 ">
+      <h3 class="text-center m-5" id="machineShredders">Piggery Pens</h3>
+      <div class="container" id="categories">    
+        <div class=" row" id="divider">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="category">
+              
+              <img src="./products images/Elevated sing farrowing pen.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <h3>Elevated Single Farrowing Pen</h3>
               <p>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
@@ -225,8 +242,41 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="category">
-              <img src="./category images/Wood Chipper.PNG" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
-              <h3>Corn Sheller and Tresher</h3>
+              <img src="./products images/Unelevated single farrowing pen.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <h3>Unelevated Single Farrowing Pen</h3>
+              <p>
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="cart-button">Add to Cart</button> 
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="category">
+              <img src="./products images/Nursery pen.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <h3>Nursery Pen</h3>
+              <p>
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="cart-button">Add to Cart</button> 
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="category">
+              <img src="./products images/Gestating Pen.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <h3>Gestating Pen</h3>
+              <p>
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="cart-button">Add to Cart</button> 
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="category">
+              <img src="./products images/Double elevated farrowing pen.png" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
+              <h3>Double Elevated Farrowing Pen</h3>
               <p>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
@@ -241,6 +291,7 @@
 
      </div>
 
+
     
     <!-- ============================ -->
 
@@ -250,5 +301,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./JavaScript/product.js"></script>
+    <script src="./JavaScript/sidebar.js"></script>
   </body>
 </html>

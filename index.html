@@ -20,14 +20,14 @@
 <body>
 
      
-    <!-- navbar -->
+    <!-- navbar ===================================================================================================================================-->
     <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid gap-5 mx-2">
         
         <div id="forLogo">
           <img src="./images/hasharon logo.png" alt="Logo">
         </div>
-        <!-- offcanvas start -->
+        <!-- offcanvas start ========================================================================-->
          <div class="d-block d-lg-none" id="menu">
           <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./images/burger-bar.png" alt=""></button>
 
@@ -37,7 +37,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body ">
-            <!-- sidebar  -->
+            <!-- sidebar  ====================================-->
              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1" >
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#section1">Home</a>
@@ -45,9 +45,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#categories">Product</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="modal">Stores</a>
-            </li>
+         
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#section4">Contact</a>
             </li>
@@ -59,18 +57,15 @@
              
               
               <!-- <a href="#section3"><img src="./images/qt-cart-small-wt.png" alt=""></a> -->
-     
-            <!-- dropdown -->
-             <!-- dropdown 1 -->
             
           </ul>
           
-             <!-- sidebar end -->
+             <!-- sidebar end ===============================-->
           </div>
         </div>
          </div>
         
-      <!-- offcanvas end -->
+      <!-- offcanvas end ========================================================================-->
         <!--  -->
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -103,10 +98,11 @@
       </div>
     </nav>
 
-    <!-- navbar end -->
+    <!-- navbar end ===================================================================================================================================-->
 
+    <!-- ............................................................................................................................... -->
   
-  <!-- Modal -->
+  <!-- Modal for signin ================================================================================================--> 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -117,10 +113,10 @@
         <!-- form -->
         <div class="modal-body" id="signinForm">
             <form action="./Homepage.html" name="#login" >
-                <label for="email">Email:</label><br>
-                <input type="email" name="email" required><br>
-                <label for="password">Password:</label><br>
-                <input type="password" name="password" required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
                 <a href="">Forgot password</a>
                 <div id="submit" class="mt-2 d-flex justify-content-center">
                     <input id="login" type="submit" value="Log in">
@@ -135,7 +131,44 @@
       </div>
     </div>
   </div>
-          <!--  -->
+
+  <!-- Modal for signup ================================================================================================-->
+  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- form -->
+        <div class="modal-body" id="signinForm">
+            <form action="index.html" name="#login" >
+                <label for="name">Name:</label>
+                <input type="text" name="text" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+                <label for="password">Confirm Password:</label>
+                <input type="password" name="password" required>
+                <!--  -->
+                
+                <!--  -->
+                <div id="submit" class="mt-2 d-flex justify-content-center">
+                    <input id="login" type="submit" value="Sign Up">
+                </div>
+
+                
+            </form>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- ================================================================================================ -->
       
   
  
@@ -148,7 +181,7 @@
                 <h1>Machines: The 
                     farmer's best friend.</h1>
                     <p>The future of farming is automated.</p>
-                    <button>Create Account</button>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModa2">Create Account</a>
                 </div>
                 
             </div>
@@ -196,8 +229,7 @@
                 <img src="./category images/mechanical tresher.jpg" alt="Mechanical Tresher" class="img-responsive" style="width:100%" alt="Image"/>
                 <h3>Mechanical Tresher</h3>
                 <p>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                  A threshing machine or a thresher is a piece of farm equipment that separates grain seed from the stalks and husks.
                 </p>
                 <button id="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   See Products
