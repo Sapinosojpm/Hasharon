@@ -21,3 +21,8 @@ document.addEventListener('click', (event) => {
     offcanvas.hide();
   }
 });
+
+// 
+
+    // Wait for the DOM to be fully loaded
+   

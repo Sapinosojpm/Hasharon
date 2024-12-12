@@ -278,7 +278,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
          
 
+         <script>
+           document.addEventListener('DOMContentLoaded', function() {
+        // Get all sidebar links
+        const sidebarLinks = document.querySelectorAll('#offcanvasRight .nav-link');
 
+        // Add click event listener to each link
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Hide the sidebar
+                const offcanvas = document.getElementById('offcanvasRight');
+                const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+                if (bsOffcanvas) {
+                    bsOffcanvas.hide();
+                }
+            });
+        });
+    });
+
+         </script>
 
 </body>
 </html>
