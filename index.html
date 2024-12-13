@@ -87,7 +87,7 @@
             
           </ul>
           <div id="signinCart" class="">
-            <button id="forSignin" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button id="forSignin" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
               Sign in
             </button>
             
@@ -103,27 +103,24 @@
     <!-- ............................................................................................................................... -->
   
   <!-- Modal for signin ================================================================================================--> 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog bg-transparent">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Sign In</h1>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <!-- form -->
-        <div class="modal-body" id="signinForm">
-          <form action="./Homepage.html">
-            <label for="username">Username:</label>
+        <!-- form --> 
+          <form class="row" action="./Homepage.html" id="formSignup">
             <input type="text" name="username" placeholder="Username" id="username" required>
-            <label for="password">Password:</label>
             <input type="password" name="password" placeholder="Password" id="password" required>
             <select class="mt-2" id="typeOfUser">
               <option value="user">User</option>
               <option value="admin">Admin</option>
             </select>
-            <input type="submit" value="Login" id="submit">
+            <input type="submit" value="Sign up" id="submit">
           </form>
-        </div>
+        
         <div class="modal-footer">
           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button> -->
@@ -133,52 +130,26 @@
   </div>
 
   <!-- Modal for signup ================================================================================================-->
-  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog bg-transparent">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Sign Up</h1>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <!-- form -->
-        <div class="modal-body" id="signinForm">
-          <div class="container" > 
-            <div class="row"> 
-            <div class="col-md-3"> 
-                          
-            </div> 
-                      
-            <div class="col-md-6 main"> 
-                          
-                <form action="http://localhost:3000/sign_up" method="post">                  
-                <!-- <h1> Signup form </h1>  -->
-                                  
-                <input class="box" type="text" name="name" id="name" 
-                placeholder="Name"  required /><br> 
-                                  
-                <input class="box" type="email" name="email" id="email" 
-                placeholder="E-Mail " required /><br> 
-                                  
-                <input class="box" type="password" name="password" 
-                id="password" placeholder="Password " required/><br> 
-                                  
-                <input class="box" type="text" name="phone" id="phone"  
-                placeholder="Phone Number " required/><br> 
-                            <br> 
-                <input type="submit" id="submitDetails"  
-                name="submitDetails" value="Submit" /><br> 
-                          
-                </form> 
-                          
-            </div> 
-                      
-                      
-            <div class="col-md-3"> 
-            </div> 
-                      
-        </div> 
-        </div> 
-        </div>
+        
+          <form class="row" action="./index.html" id="formSignup">
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="password" name="password" placeholder="Confirm password" id="password" required>
+            <select class="mt-2" id="typeOfUser">
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+            <input type="submit" value="Sign up" id="submit">
+          </form>
+        
         <div class="modal-footer">
           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button> -->
@@ -199,7 +170,7 @@
                 <h1>Machines: The 
                     farmer's best friend.</h1>
                     <p>-The future of farming is automated.</p>
-                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModa2">Create Account</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2">Create Account</a>
                 </div>
                 
             </div>
