@@ -3,6 +3,8 @@
     height: 55%;
     padding-top: 1%;
     padding-bottom: 50px;
+    box-shadow: 1px 1px 20px black;
+
 }
 #section1 #content{
     display: grid;
@@ -32,13 +34,23 @@
         border: 1px solid #387F39 ;
 
 }
+#content1 h1{
+    font-weight: 700;
+    font-size: 4rem;
+    transition: 1s;
+    color: rgb(48, 48, 48);
+}
 
+#content1 h1:hover{
+    color: white;
+}
 #contentImg{
     order:3;
 }
 #contentImg img{
     width: 100%;
     transition:.5s;
+    
     
 }
 #contentImg img:hover{
