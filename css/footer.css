@@ -16,3 +16,9 @@ footer{
     bottom:0;
     width: 35%;
   }
+
+  @media screen and (max-width: 768px) {
+    #human {
+      display: none;
+    }
+  }
