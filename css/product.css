@@ -94,8 +94,8 @@ nav{
   }
   
   .category:hover {
-    transform: scale(1);
-    box-shadow: inset 1px 1px 5px rgb(0, 0, 0);
+    transform: scale(1.02);
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
     
   }
   
