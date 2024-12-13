@@ -1,4 +1,5 @@
 footer{
+    position: relative;
     background-color: #A2CA71;
     height: 50px;
     display: flex;
@@ -8,3 +9,10 @@ footer{
     padding-bottom: 20px;
     /* margin-top: 10%; */
 }
+
+#human{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 35%;
+  }
