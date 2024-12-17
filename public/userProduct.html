@@ -118,25 +118,37 @@
     <!-- nav end -->
     <!-- modal====================================================================================================================== -->
         <!-- Modal for signin ================================================================================================--> 
-  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog bg-transparent">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Sign In</h1>
-          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog bg-transparent">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Sign In</h1>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- form --> 
+                <form class="row" action="/login" method="POST" id="formSignup">
+                  <input type="text" name="username" placeholder="Username" id="username" required>
+                  <input type="password" name="password" placeholder="Password" id="password" required>
+                  <!-- <select class="mt-2" name="userType" id="typeOfUser">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                  </select> -->
+                  <input type="submit" value="Sign in" id="submit">
+                </form>
+              
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- form --> 
-          <form class="row" action="./product.html" id="formSignup">
-            <input type="text" name="username" placeholder="Username" id="username" required>
-            <input type="password" name="password" placeholder="Password" id="password" required>
-            <select class="mt-2" id="typeOfUser">
-              <option value="user">User</option>
-              <option value="admin">Admin</option>
-            </select>
-            <input type="submit" value="Sign in" id="submit">
-          </form>
-        
-        <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
