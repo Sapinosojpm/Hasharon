@@ -7,7 +7,142 @@
     <link rel="stylesheet" href="user.css">
     <style>
         /* General Reset */
-      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            width: 70%;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background-color: #387F39;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Form Styling */
+        .form-container {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Image Section */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .image-container input {
+            display: none;
+        }
+
+        .image-container label {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #387F39;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Save Button */
+        button {
+            background-color: #387F39;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #2f6831;
+        }
+
+        /* Date of Birth Flexbox */
+        .dob-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .dob-container select {
+            flex: 1;
+            min-width: 100px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+            }
+
+            .header {
+                font-size: 20px;
+                padding: 8px 10px;
+            }
+
+            label, input, select, button {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                font-size: 18px;
+            }
+
+            .form-container {
+                padding: 10px;
+            }
+
+            .dob-container {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -20,11 +155,10 @@
             <form>
                 <!-- Profile Picture -->
                 <div class="form-group image-container">
-                  <div>
-                    <img src="default-avatar.png" alt="Profile Picture" id="profileImage">
-                  </div>
-                    
-                    <input type="file" id="fileInput" accept="image/*">
+                    <div>
+                        <img src="default-avatar.png" alt="Profile Picture" id="profileImage">
+                    </div>
+                    <input type="file" id="fileInput" accept="image/*" required>
                     <label for="fileInput">Select Image</label>
                 </div>
 
@@ -52,72 +186,41 @@
                     <input type="text" id="phone" placeholder="Add your phone number">
                 </div>
 
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Add your address">
+                </div>
+
                 <!-- Gender -->
                 <div class="form-group">
                     <label>Gender</label>
-                    <div style="display: flex; gap: 10px;"id="radioBtn">
-                      <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
-                    <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
-                    <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="radio" name="gender" value="male" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" value="other" id="other">
+                        <label for="other">Other</label>
                     </div>
-                    
                 </div>
 
                 <!-- Date of Birth -->
                 <div class="form-group">
                     <label for="dob">Date of Birth</label>
-                    <div style="display: flex; gap: 10px;">
+                    <div class="dob-container">
                         <select id="date">
                             <option>Date</option>
                             <option>1</option>
                             <option>2</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                            <option>13</option>
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>20</option>
-                            <option>21</option>
-                            <option>22</option>
-                            <option>23</option>
-                            <option>24</option>
-                            <option>25</option>
-                            <option>26</option>
-                            <option>27</option>
-                            <option>28</option>
-                            <option>29</option>
-                            <option>30</option>
-                            <option>31</option>
-
-
-
+                            <option>3</option>
                             <!-- Add more -->
                         </select>
                         <select id="month">
                             <option>Month</option>
                             <option>January</option>
                             <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
-                            <option>December</option>
+                            <!-- Add more -->
                         </select>
                         <select id="year">
                             <option>Year</option>

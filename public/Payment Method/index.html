@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.payment-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    margin: 15px 0;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+.card-details,
+.paypal-details,
+.stripe-details {
+    margin: 10px 0 20px 30px;
+}
+
+.card-details input {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #ff5a5f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #e04a4e;
+}
+
+.hidden {
+    display: none;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
+
+</style>
+<body>
+    <div class="payment-container">
+        <h1>Payment Options</h1>
+        
+        <!-- Card Payment -->
+        <div class="payment-option">
+            <input type="radio" id="card" name="payment" value="card" checked>
+            <label for="card">Credit/Debit Card</label>
+            <div class="card-details">
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Card Holder Name" required>
+                <input type="text" placeholder="Expiry Date (MM/YY)" required>
+                <input type="password" placeholder="CVV" required>
+            </div>
+        </div>
+
+        <!-- PayPal -->
+        <div class="payment-option">
+            <input type="radio" id="paypal" name="payment" value="paypal">
+            <label for="paypal">PayPal</label>
+            <div class="paypal-details hidden">
+                <p>Redirecting to PayPal for secure payment...</p>
+                <button class="paypal-button">Pay with PayPal</button>
+            </div>
+        </div>
+
+        <!-- Stripe -->
+        <div class="payment-option">
+            <input type="radio" id="stripe" name="payment" value="stripe">
+            <label for="stripe">Stripe</label>
+            <div class="stripe-details hidden">
+                <p>Redirecting to Stripe for secure payment...</p>
+                <button class="stripe-button">Pay with Stripe</button>
+            </div>
+        </div>
+
+         <!-- Gcash -->
+         <div class="payment-option">
+            <input type="radio" id="gcash" name="payment" value="gcash">
+            <label for="gcash">Gcash</label>
+            <div class="gcash-details hidden">
+                <p>Redirecting to Gcash for secure payment...</p>
+                <button class="stripe-button">Pay with Gcash</button>
+            </div>
+        </div>
+
+        <!-- Cash on Delivery -->
+        <div class="payment-option">
+            <input type="radio" id="cod" name="payment" value="cod">
+            <label for="cod">Cash on Delivery</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Proceed to Payment</button>
+    </div>
+
+    <script src="script.js">
+
+
+    </script>
+</body>
+</html>

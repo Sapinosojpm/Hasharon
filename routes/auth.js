@@ -6,6 +6,8 @@ const path = require('path');
 const router = express.Router();
 
 // Signup Route
+
+
 router.post('/signup', async (req, res) => {
     try {
         const { username, email, password } = req.body;
